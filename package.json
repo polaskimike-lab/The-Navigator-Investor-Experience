@@ -1,6 +1,6 @@
 {
-  "name": "navigator-experience-v4-cinematic-edition",
-  "version": "4.0.0",
+  "name": "navigator-investor-experience-v3-0",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
