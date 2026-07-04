@@ -5,6 +5,7 @@ const scenes = [
   "Sphere",
   "Canvas",
   "Optimization",
+  "Executive",
   "PTR",
   "Roadmap",
   "Closing"
