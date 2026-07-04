@@ -1,6 +1,6 @@
 {
-  "name": "navigator-investor-experience-v3-0",
-  "version": "3.0.0",
+  "name": "navigator-investor-experience-v3-1-directors-cut",
+  "version": "3.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

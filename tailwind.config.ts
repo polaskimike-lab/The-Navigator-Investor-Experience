@@ -1,12 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./data/**/*.{ts,tsx}",
-    "./navigator-os/**/*.{ts,tsx}"
-  ],
+  content: ["./app/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./data/**/*.{ts,tsx}", "./navigator-os/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -23,7 +18,8 @@ const config: Config = {
       boxShadow: {
         glow: "0 0 52px rgba(56,189,248,0.18)",
         risk: "0 0 44px rgba(245,158,11,0.18)",
-        critical: "0 0 44px rgba(239,68,68,0.16)"
+        critical: "0 0 44px rgba(239,68,68,0.16)",
+        deepGlow: "0 0 120px rgba(56,189,248,0.14)"
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
@@ -33,5 +29,4 @@ const config: Config = {
   },
   plugins: []
 };
-
 export default config;

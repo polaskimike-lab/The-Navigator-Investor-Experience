@@ -15,6 +15,7 @@ export function RiskConvergenceMap() {
       <svg viewBox="0 0 920 360" className="relative h-[360px] w-full" aria-label="Risk convergence visualization">
         <defs><linearGradient id="riskFlow" x1="0" x2="1"><stop offset="0%" stopColor="#38BDF8" stopOpacity="0.2" /><stop offset="55%" stopColor="#F59E0B" stopOpacity="0.9" /><stop offset="100%" stopColor="#EF4444" stopOpacity="0.95" /></linearGradient></defs>
         <path d="M80 210 C 190 155, 260 150, 320 250 S 475 105, 585 245 S 740 115, 840 220" fill="none" stroke="url(#riskFlow)" strokeWidth="4" strokeDasharray="14 10" className="risk-line" />
+        <path d="M210 105 C 330 65, 470 80, 585 245" fill="none" stroke="#38BDF8" strokeWidth="1.5" strokeDasharray="8 12" className="risk-line" opacity=".65" />
         {nodes.map((node) => (
           <g key={node.label}>
             <circle cx={node.x} cy={node.y} r="33" fill={node.tone} opacity=".10" />

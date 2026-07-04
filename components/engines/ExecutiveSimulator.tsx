@@ -2,12 +2,7 @@
 
 import { useMemo, useState } from "react";
 
-function Slider({
-  label, value, min, max, step, suffix, onChange
-}: {
-  label: string; value: number; min: number; max: number; step: number; suffix?: string;
-  onChange: (value: number) => void;
-}) {
+function Slider({ label, value, min, max, step, suffix, onChange }: { label: string; value: number; min: number; max: number; step: number; suffix?: string; onChange: (value: number) => void; }) {
   return (
     <div className="rounded-2xl border border-line bg-black/25 p-4">
       <div className="mb-3 flex items-center justify-between gap-4">
@@ -57,9 +52,7 @@ export function ExecutiveSimulator() {
     <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
       <div className="mission-panel rounded-[2rem] p-7">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-blueIntel">Interactive Executive Model</p>
-        <h3 className="mt-4 text-4xl font-semibold leading-[.95] tracking-[-0.055em] text-white">
-          Adjust the operating assumptions. Watch the investment case move.
-        </h3>
+        <h3 className="mt-4 text-4xl font-semibold leading-[.95] tracking-[-0.055em] text-white">Adjust the operating assumptions. Watch the investment case move.</h3>
         <div className="mt-7 grid gap-4">
           <Slider label="Fleet Size" value={fleetSize} min={100} max={10000} step={100} onChange={setFleetSize} />
           <Slider label="Annual Miles / Tractor" value={annualMiles} min={60000} max={160000} step={5000} onChange={setAnnualMiles} />
@@ -86,10 +79,6 @@ export function ExecutiveSimulator() {
             <div><p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">Implementation Cost</p><p className="mt-2 text-2xl font-semibold text-white">{money(model.implementationCost)}</p></div>
             <div><p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">Model Confidence</p><p className="mt-2 text-2xl font-semibold text-white">{model.confidence.toFixed(1)}%</p></div>
           </div>
-        </div>
-        <div className="mt-5 rounded-3xl border border-blueIntel/25 bg-blueIntel/[0.055] p-5">
-          <p className="font-mono text-xs uppercase tracking-[0.24em] text-blueIntel">Scenario Assumptions</p>
-          <p className="mt-3 text-sm leading-7 text-slate-300">12-month operating model. Revenue protected includes avoided service failure, shipment disruption, emergency transload exposure, customer confidence impact, and delay-related supply-chain risk. ROI is modeled over three years and should be validated with customer operating data during diligence.</p>
         </div>
       </div>
     </div>
