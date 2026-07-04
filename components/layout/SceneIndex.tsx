@@ -7,6 +7,7 @@ const scenes = [
   "Optimization",
   "Executive",
   "PTR",
+  "Expansion",
   "Roadmap",
   "Closing"
 ];
