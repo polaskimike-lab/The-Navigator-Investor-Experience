@@ -1,12 +1,18 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ["./app/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./data/**/*.{ts,tsx}"],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./data/**/*.{ts,tsx}",
+    "./navigator-os/**/*.{ts,tsx}"
+  ],
   theme: {
     extend: {
       colors: {
         obsidian: "#05070B",
         graphite: "#0D1117",
+        steel: "#111827",
         line: "rgba(255,255,255,0.12)",
         blueIntel: "#38BDF8",
         amberRisk: "#F59E0B",

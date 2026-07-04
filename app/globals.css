@@ -11,7 +11,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 15% 4%, rgba(56,189,248,.12), transparent 34rem),
+    radial-gradient(circle at 14% 4%, rgba(56,189,248,.13), transparent 34rem),
     radial-gradient(circle at 92% 25%, rgba(245,158,11,.10), transparent 28rem),
     #05070B;
   color: #F8FAFC;
@@ -26,14 +26,14 @@ body {
   mask-image: radial-gradient(circle at center, black, transparent 78%);
 }
 
-.ptr-gradient {
-  background: linear-gradient(90deg, #10B981 0%, #38BDF8 35%, #F59E0B 68%, #EF4444 100%);
-}
-
 .mission-panel {
   background: rgba(17,24,39,.72);
   border: 1px solid rgba(255,255,255,.12);
   backdrop-filter: blur(20px);
+}
+
+.ptr-gradient {
+  background: linear-gradient(90deg, #10B981 0%, #38BDF8 35%, #F59E0B 68%, #EF4444 100%);
 }
 
 .image-preserve img {
@@ -48,19 +48,21 @@ body {
   animation: dash 8s linear infinite;
 }
 
-@keyframes dash {
-  to { stroke-dashoffset: -200; }
-}
+.orbit-slow { animation: spin 28s linear infinite; }
+.orbit-mid { animation: spin 18s linear infinite reverse; }
+.orbit-fast { animation: spin 11s linear infinite; }
 
-@keyframes missionPulse {
-  0%, 100% { opacity: .42; transform: scale(1); }
-  50% { opacity: .95; transform: scale(1.035); }
+.float-soft { animation: floatSoft 7s ease-in-out infinite; }
+
+@keyframes dash { to { stroke-dashoffset: -200; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes floatSoft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: .001ms !important;
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;

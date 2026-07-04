@@ -1,32 +1,29 @@
-# THE NAVIGATOR™ Investor Experience v1.0
+# THE NAVIGATOR™ Investor Experience v2.4.0 — Constellation
 
-Clean Vercel-ready repository for the public investor proof-of-concept.
+Complete repository release.
 
-## Purpose
+## What this release introduces
 
-This is not the full Navigator platform. It is a presentation-grade Investor Experience module whose only purpose is to convince investors, strategic partners, and enterprise customers that Navigator represents the future of transportation intelligence.
+- Navigator Intelligence Sphere™
+- Mission Canvas™ preview
+- Operational Optimization Engine™ fuel demonstration
+- Scene-based presentation architecture
+- Reduced patch complexity
+- Navigator OS foundation files
+- Static assets stored in public/assets
 
-## Deploy on Vercel
+## Deploy
 
-1. Upload all files in this package to a new GitHub repository.
-2. Go to vercel.com.
-3. Import the GitHub repository.
-4. Framework: Next.js.
-5. Deploy.
+Upload this complete project to the Investor Experience GitHub repository, replacing the existing repository contents, then deploy latest commit in Vercel.
 
-## Run locally
+## Required structure
 
-```bash
-npm install
-npm run dev
-```
-
-## Module boundary
-
-Future modules include:
-- Fleet Operations Platform
-- Executive Analytics
-- Mobile Driver Experience
-- Maintenance Intelligence
-- AI Prediction Engine
-- Transportation Digital Twin
+- app/
+- components/
+- data/
+- navigator-os/
+- public/assets/
+- package.json
+- tailwind.config.ts
+- tsconfig.json
+- postcss.config.js

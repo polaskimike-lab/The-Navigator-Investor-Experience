@@ -1,53 +1,26 @@
-import { SceneShell } from "@/components/presentation/SceneShell";
-import { RiskConvergenceMap } from "@/components/visuals/RiskConvergenceMap";
-import { RiskSignalCard } from "@/components/presentation/RiskSignalCard";
+import { SectionTitle } from "@/components/core/SectionTitle";
+import { RiskConvergenceMap } from "@/components/engines/RiskConvergenceMap";
 
 export function ProblemScene() {
   return (
-    <SceneShell
-      id="scene-04"
-      eyebrow="The problem"
-      title="Transportation failures rarely come from one event. They come from risk convergence."
-      compact
-    >
-      <div className="grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
+    <section className="mx-auto max-w-7xl px-5 py-16 md:px-8">
+      <SectionTitle eyebrow="The problem" title="Transportation failures rarely come from one event. They come from risk convergence." />
+      <div className="mt-8 grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
         <RiskConvergenceMap />
-
         <div className="grid gap-4">
-          <RiskSignalCard
-            label="Weather"
-            state="13-hour winter event"
-            copy="A forecasted storm changes route timing, fuel strategy, driver exposure, and delivery confidence."
-            tone="amber"
-          />
-          <RiskSignalCard
-            label="Equipment"
-            state="Wheel-end advisory"
-            copy="A manageable maintenance trend becomes critical when the asset is routed into low-visibility conditions."
-            tone="red"
-          />
-          <RiskSignalCard
-            label="Customer"
-            state="$2.3M relationship exposure"
-            copy="A single failed shipment can ripple into production delays, emergency transloads, penalties, and loss of confidence."
-            tone="blue"
-          />
+          {[
+            ["Weather", "13-hour winter event", "A forecasted storm changes route timing, fuel strategy, driver exposure, and delivery confidence."],
+            ["Equipment", "Wheel-end advisory", "A manageable maintenance trend becomes critical when routed into low-visibility conditions."],
+            ["Customer", "$2.3M relationship exposure", "One failed shipment can ripple into production delays, emergency transloads, and loss of confidence."]
+          ].map(([label, state, copy]) => (
+            <div key={label} className="mission-panel rounded-3xl p-5">
+              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted">{label}</p>
+              <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-white">{state}</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-400">{copy}</p>
+            </div>
+          ))}
         </div>
       </div>
-
-      <div className="mt-6 grid gap-4 md:grid-cols-4">
-        {[
-          ["Current systems", "Report isolated events"],
-          ["Fleet teams", "Manually connect the risk"],
-          ["Navigator", "Models the convergence"],
-          ["Outcome", "Action before failure"]
-        ].map(([label, value]) => (
-          <div key={label} className="rounded-2xl border border-line bg-white/[0.045] p-5">
-            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted">{label}</p>
-            <p className="mt-3 text-xl font-semibold tracking-[-0.03em] text-white">{value}</p>
-          </div>
-        ))}
-      </div>
-    </SceneShell>
+    </section>
   );
 }

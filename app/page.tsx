@@ -1,16 +1,12 @@
-import { SceneIndex } from "@/components/presentation/SceneIndex";
-import { MissionBriefingScene } from "@/components/scenes/MissionBriefingScene";
-import { LaunchVisualScene } from "@/components/scenes/LaunchVisualScene";
-import { PlatformPreviewScene } from "@/components/scenes/PlatformPreviewScene";
+import { SceneIndex } from "@/components/layout/SceneIndex";
+import { HeroScene } from "@/components/scenes/HeroScene";
+import { LaunchScene } from "@/components/scenes/LaunchScene";
 import { ProblemScene } from "@/components/scenes/ProblemScene";
-import { AssetProtectionScene } from "@/components/scenes/AssetProtectionScene";
-import { PTRFrameworkScene } from "@/components/scenes/PTRFrameworkScene";
-import { DecisionEngineScene } from "@/components/scenes/DecisionEngineScene";
-import { RevenueRiskScene } from "@/components/scenes/RevenueRiskScene";
-import { FutureInterfaceScene } from "@/components/scenes/FutureInterfaceScene";
-import { PilotStrategyScene } from "@/components/scenes/PilotStrategyScene";
-import { ExpansionRoadmapScene } from "@/components/scenes/ExpansionRoadmapScene";
-import { MoatScene } from "@/components/scenes/MoatScene";
+import { SphereScene } from "@/components/scenes/SphereScene";
+import { MissionCanvasScene } from "@/components/scenes/MissionCanvasScene";
+import { OptimizationScene } from "@/components/scenes/OptimizationScene";
+import { PTRScene } from "@/components/scenes/PTRScene";
+import { RoadmapScene } from "@/components/scenes/RoadmapScene";
 import { ClosingScene } from "@/components/scenes/ClosingScene";
 
 export default function InvestorExperience() {
@@ -18,19 +14,15 @@ export default function InvestorExperience() {
     <main className="relative overflow-hidden bg-obsidian text-white">
       <div className="fixed inset-0 grid-field opacity-40 pointer-events-none" />
       <SceneIndex />
-      <MissionBriefingScene />
-      <LaunchVisualScene />
-      <PlatformPreviewScene />
-      <ProblemScene />
-      <AssetProtectionScene />
-      <PTRFrameworkScene />
-      <DecisionEngineScene />
-      <RevenueRiskScene />
-      <FutureInterfaceScene />
-      <PilotStrategyScene />
-      <ExpansionRoadmapScene />
-      <MoatScene />
-      <ClosingScene />
+      <div id="scene-1"><HeroScene /></div>
+      <div id="scene-2"><LaunchScene /></div>
+      <div id="scene-3"><ProblemScene /></div>
+      <div id="scene-4"><SphereScene /></div>
+      <div id="scene-5"><MissionCanvasScene /></div>
+      <div id="scene-6"><OptimizationScene /></div>
+      <div id="scene-7"><PTRScene /></div>
+      <div id="scene-8"><RoadmapScene /></div>
+      <div id="scene-9"><ClosingScene /></div>
     </main>
   );
 }

@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export function ClosingScene() {
   return (
-    <section id="scene-13" className="relative flex min-h-[74vh] items-center justify-center px-5 py-20 text-center">
+    <section className="relative flex min-h-[74vh] items-center justify-center px-5 py-20 text-center">
       <div className="mission-panel max-w-5xl rounded-[2rem] p-10 shadow-glow md:p-16">
         <p className="font-mono text-xs uppercase tracking-[0.45em] text-blueIntel">Request strategic briefing</p>
         <h2 className="mt-7 text-5xl font-semibold leading-[.9] tracking-[-0.065em] text-white md:text-7xl">

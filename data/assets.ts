@@ -15,17 +15,14 @@ export const ptrWeights = [
   { label: "Wildlife", value: 10, detail: "Deer activity, migration corridors, time-of-day risk" }
 ];
 
-export const investmentStats = [
-  { label: "Modeled fleet ROI", value: "210%", detail: "Illustrative 500-truck scenario" },
-  { label: "Pilot deployment", value: "100", detail: "Vehicles in first commercial pilot" },
-  { label: "PTR refresh", value: "5 min", detail: "Risk updates across active assets" },
-  { label: "Seed target", value: "$2M", detail: "Platform build + pilot execution" }
+export const missionSignals = [
+  "Weather", "Traffic", "Driver", "Equipment", "Cargo", "Route", "Wildlife", "Fuel", "Customer", "Revenue"
 ];
 
 export const recommendations = [
-  { title: "Advance departure window", impact: "$87K protected", delta: "-31 PTR", copy: "NOAA storm forecast elevates corridor risk within 13 hours." },
-  { title: "Stage transload contingency", impact: "$142K protected", delta: "-18 PTR", copy: "Service Assurance falls below threshold if both assets enter the same storm band." },
-  { title: "Notify receiving customer", impact: "$2.3M exposure", delta: "+24 SAS", copy: "Delivery confidence changes materially; proactive notice protects relationship value." }
+  { title: "Delay fueling 63 miles", impact: "$842 saved", delta: "0 min arrival impact", confidence: "96.8%", copy: "Fuel cost, rush-hour exposure, weather, and HOS support a later refuel stop." },
+  { title: "Advance departure window", impact: "$87K protected", delta: "-31 PTR", confidence: "94.2%", copy: "NOAA storm forecast elevates corridor risk within 13 hours." },
+  { title: "Stage transload contingency", impact: "$142K protected", delta: "-18 PTR", confidence: "91.6%", copy: "Service Assurance falls below threshold if both assets enter the same storm band." }
 ];
 
 export const roadmap = [
