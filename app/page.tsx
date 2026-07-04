@@ -6,6 +6,7 @@ import { SphereScene } from "@/components/scenes/SphereScene";
 import { MissionCanvasScene } from "@/components/scenes/MissionCanvasScene";
 import { OptimizationScene } from "@/components/scenes/OptimizationScene";
 import { ExecutiveSimulatorScene } from "@/components/scenes/ExecutiveSimulatorScene";
+import { ScenarioStudioScene } from "@/components/scenes/ScenarioStudioScene";
 import { PTRScene } from "@/components/scenes/PTRScene";
 import { PlatformExpansionScene } from "@/components/scenes/PlatformExpansionScene";
 import { RoadmapScene } from "@/components/scenes/RoadmapScene";
@@ -23,10 +24,11 @@ export default function InvestorExperience() {
       <div id="scene-5"><MissionCanvasScene /></div>
       <div id="scene-6"><OptimizationScene /></div>
       <div id="scene-7"><ExecutiveSimulatorScene /></div>
-      <div id="scene-8"><PTRScene /></div>
-      <div id="scene-9"><PlatformExpansionScene /></div>
-      <div id="scene-10"><RoadmapScene /></div>
-      <div id="scene-11"><ClosingScene /></div>
+      <div id="scene-8"><ScenarioStudioScene /></div>
+      <div id="scene-9"><PTRScene /></div>
+      <div id="scene-10"><PlatformExpansionScene /></div>
+      <div id="scene-11"><RoadmapScene /></div>
+      <div id="scene-12"><ClosingScene /></div>
     </main>
   );
 }

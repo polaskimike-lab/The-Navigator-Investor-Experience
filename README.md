@@ -1,29 +1,18 @@
-# THE NAVIGATOR™ Investor Experience v2.4.0 — Constellation
+# THE NAVIGATOR™ Investor Experience v3.0
 
 Complete repository release.
 
-## What this release introduces
+## Includes
 
 - Navigator Intelligence Sphere™
-- Mission Canvas™ preview
-- Operational Optimization Engine™ fuel demonstration
-- Scene-based presentation architecture
-- Reduced patch complexity
+- Mission Canvas™
+- Operational Optimization Engine™ fuel demo
+- Interactive Executive Financial Model
+- Navigator Studio™ scenario demo
+- PTR Framework
+- Cross-modal platform expansion
 - Navigator OS foundation files
-- Static assets stored in public/assets
 
 ## Deploy
 
-Upload this complete project to the Investor Experience GitHub repository, replacing the existing repository contents, then deploy latest commit in Vercel.
-
-## Required structure
-
-- app/
-- components/
-- data/
-- navigator-os/
-- public/assets/
-- package.json
-- tailwind.config.ts
-- tsconfig.json
-- postcss.config.js
+Upload the extracted contents of this ZIP to the Investor Experience GitHub repository and commit to `main`. Vercel should deploy the latest commit automatically.

@@ -15,10 +15,6 @@ export const ptrWeights = [
   { label: "Wildlife", value: 10, detail: "Deer activity, migration corridors, time-of-day risk" }
 ];
 
-export const missionSignals = [
-  "Weather", "Traffic", "Driver", "Equipment", "Cargo", "Route", "Wildlife", "Fuel", "Customer", "Revenue"
-];
-
 export const recommendations = [
   { title: "Delay fueling 63 miles", impact: "$842 saved", delta: "0 min arrival impact", confidence: "96.8%", copy: "Fuel cost, rush-hour exposure, weather, and HOS support a later refuel stop." },
   { title: "Advance departure window", impact: "$87K protected", delta: "-31 PTR", confidence: "94.2%", copy: "NOAA storm forecast elevates corridor risk within 13 hours." },

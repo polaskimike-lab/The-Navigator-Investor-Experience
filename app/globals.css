@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 :root { color-scheme: dark; }
-
 * { box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -51,7 +49,6 @@ body {
 .orbit-slow { animation: spin 28s linear infinite; }
 .orbit-mid { animation: spin 18s linear infinite reverse; }
 .orbit-fast { animation: spin 11s linear infinite; }
-
 .float-soft { animation: floatSoft 7s ease-in-out infinite; }
 
 @keyframes dash { to { stroke-dashoffset: -200; } }

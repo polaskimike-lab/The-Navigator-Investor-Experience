@@ -13,22 +13,14 @@ export function RiskConvergenceMap() {
     <div className="relative overflow-hidden rounded-[2rem] border border-line bg-obsidian p-4 shadow-glow">
       <div className="absolute inset-0 grid-field opacity-35" />
       <svg viewBox="0 0 920 360" className="relative h-[360px] w-full" aria-label="Risk convergence visualization">
-        <defs>
-          <linearGradient id="riskFlow" x1="0" x2="1">
-            <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.2" />
-            <stop offset="55%" stopColor="#F59E0B" stopOpacity="0.9" />
-            <stop offset="100%" stopColor="#EF4444" stopOpacity="0.95" />
-          </linearGradient>
-        </defs>
+        <defs><linearGradient id="riskFlow" x1="0" x2="1"><stop offset="0%" stopColor="#38BDF8" stopOpacity="0.2" /><stop offset="55%" stopColor="#F59E0B" stopOpacity="0.9" /><stop offset="100%" stopColor="#EF4444" stopOpacity="0.95" /></linearGradient></defs>
         <path d="M80 210 C 190 155, 260 150, 320 250 S 475 105, 585 245 S 740 115, 840 220" fill="none" stroke="url(#riskFlow)" strokeWidth="4" strokeDasharray="14 10" className="risk-line" />
         {nodes.map((node) => (
           <g key={node.label}>
             <circle cx={node.x} cy={node.y} r="33" fill={node.tone} opacity=".10" />
             <circle cx={node.x} cy={node.y} r="18" fill={node.tone} opacity=".20" />
             <circle cx={node.x} cy={node.y} r="6" fill="#F8FAFC" />
-            <text x={node.x} y={node.y + 45} textAnchor="middle" fill="#CBD5E1" fontSize="13" fontFamily="monospace">
-              {node.label}
-            </text>
+            <text x={node.x} y={node.y + 45} textAnchor="middle" fill="#CBD5E1" fontSize="13" fontFamily="monospace">{node.label}</text>
           </g>
         ))}
       </svg>
